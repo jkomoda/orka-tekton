@@ -1,0 +1,17 @@
+name: test-runner
+
+on:
+  push:
+    paths:
+      - .github/workflows/test-runner.yaml
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Hello World
+    runs-on: self-hosted
+    steps:
+      - name: Print hello world
+        run: |
+          echo "Hello World"
+
